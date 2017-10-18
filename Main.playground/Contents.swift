@@ -27,3 +27,10 @@ for i in 0..<Matrix.count{
     }
 }
 print("min values: ", minValues)
+
+//Array what contains LAST element of every line
+var lastValues : [Int] = Array(repeating: 0, count: Matrix.count)
+for i in 0..<Matrix.count{
+    lastValues[i] = Matrix[i][Matrix[i].count-1]
+    }
+print("last values: ", lastValues)
