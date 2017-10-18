@@ -34,3 +34,11 @@ for i in 0..<Matrix.count{
     lastValues[i] = Matrix[i][Matrix[i].count-1]
     }
 print("last values: ", lastValues)
+
+//Print String, if item on same line == "Yes"
+var boolString : [[String]] = [["Yes","Text0"],["No","Text1"],["Yes","Text2"]]
+for i in 0..<boolString.count{
+    if boolString[i][0] == "Yes" {
+        print(boolString[i][1])
+    	}
+}
